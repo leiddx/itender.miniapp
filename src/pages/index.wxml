@@ -1,0 +1,30 @@
+<view class="search">
+	<search
+		bindinput="onSearch"
+		bindmore="onFilterCategory"
+	/>
+</view>
+
+<view class="category">
+	<category
+		model:more="{{ more }}"
+		bindselect="onSelectCategory"
+	/>
+
+</view>
+
+<navigator
+	class="item"
+	url="/pages/detail?id={{ item.id }}"
+	wx:key="id"
+	wx:for="{{ items }}"
+>
+	<text class="name">{{ item.name }}</text>
+	<text class="updated">{{ item.updated }}</text>
+	<text class="belike">{{ item.belike }}</text>
+	<text class="created">{{ item.created }}</text>
+
+
+</navigator>
+
+<text class="nomore">没有更多数据了</text>

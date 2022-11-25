@@ -1,0 +1,67 @@
+<text class="name">{{ item.name }}</text>
+
+<view class="release">
+	<view class="ii">
+		<text class="label">{{ item.release }}</text>
+		<text class="dated">{{ item.created }} ({{ item.updated }})</text>
+	</view>
+
+	<text
+		class="subscribe active"
+		bindtap="onToggleSubscribe"
+		wx:if="{{ subscribe }}"
+	>已订阅</text>
+
+	<text
+		class="subscribe"
+		bindtap="onToggleSubscribe"
+		wx:else
+	>订阅</text>
+
+
+</view>
+
+
+
+
+<view class="belike">
+	<text class="label">项目概况</text>
+	<text class="ctx">{{ item.belike }}</text>
+</view>
+
+<view class="more">
+	<view class="item">
+		<text class="label">项目分类：</text>
+		<text class="ctx">{{ item.category }}</text>
+	</view>
+	<view class="item">
+		<text class="label">项目状态：</text>
+		<text class="ctx">{{ item.state }}</text>
+	</view>
+	<view class="item">
+		<text class="label">项目编号：</text>
+		<text class="ctx">{{ item.serial }}</text>
+	</view>
+	<view class="item">
+		<text class="label">预算金额：</text>
+		<text class="ctx">{{ item.estimate }}</text>
+	</view>
+	<view class="item">
+		<text class="label">最高限价：</text>
+		<text class="ctx">{{ item.limit }}</text>
+	</view>
+	<view class="item">
+		<text class="label">投标时间：</text>
+		<text class="ctx">{{ item.delivery }}</text>
+	</view>
+</view>
+
+
+<view class="body">
+	<text class="label">公告详情</text>
+	<rich-text
+		user-select
+		space="nbsp"
+		nodes="{{ item.body }}"
+	></rich-text>
+</view>

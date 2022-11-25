@@ -1,0 +1,20 @@
+<view class="search">
+	<image
+		class="icon"
+		src="/images/search.png"
+	/>
+
+	<input
+		class="input"
+		confirm-type="search"
+		model:value="{{ value }}"
+		bindblur="onSearch"
+		bindconfirm="onSearch"
+	/>
+
+	<image
+		class="icon"
+		src="/images/more.png"
+		bindtap="onMore"
+	/>
+</view>

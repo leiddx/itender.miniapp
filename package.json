@@ -1,0 +1,21 @@
+{
+	"name": "itender.miniapp",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {},
+	"keywords": [],
+	"author": "",
+	"license": "",
+	"dependencies": {
+		"axios": "^0.26.1",
+		"axios-miniprogram-adapter": "^0.3.4",
+		"moment": "^2.29.4",
+		"query-string": "^7.1.1"
+	},
+	"devDependencies": {
+		"@types/wechat-miniprogram": "^3.4.1",
+		"@typescript-eslint/eslint-plugin": "^5.40.1",
+		"@typescript-eslint/parser": "^5.40.1",
+		"eslint": "^8.25.0"
+	}
+}

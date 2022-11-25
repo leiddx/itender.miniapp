@@ -1,0 +1,16 @@
+<view
+	class="item"
+	data-index="{{ index }}"
+	bindtap="onReadedMessage"
+	wx:key="id"
+	wx:for="{{ items }}"
+>
+	<text class="name">{{ item.poster.name }}</text>
+	<text class="updated">{{ item.updated }}</text>
+	<text class="belike">{{ item.poster.belike }}</text>
+	<text class="state">{{ item.state }}</text>
+
+
+</view>
+
+<text class="nomore">没有更多数据了</text>

@@ -1,0 +1,42 @@
+{
+	"appid": "wx265c47f6c5a9cf98",
+	"compileType": "miniprogram",
+	"condition": {},
+	"description": "项目配置文件",
+	"editorSetting": {
+		"tabIndent": "tab",
+		"tabSize": 4
+	},
+	"libVersion": "2.27.2",
+	"miniprogramRoot": "src/",
+	"packOptions": {
+		"ignore": [],
+		"include": []
+	},
+	"projectname": "itender.miniapp",
+	"setting": {
+		"babelSetting": {
+			"disablePlugins": [],
+			"ignore": [],
+			"outputPath": ""
+		},
+		"packNpmManually": true,
+		"packNpmRelationList": [
+			{
+				"miniprogramNpmDistDir": "./src/",
+				"packageJsonPath": "./package.json"
+			}
+		],
+		"useCompilerPlugins": [
+			"typescript",
+			"less"
+		],
+		"es6": true,
+		"enhance": true,
+		"minifyWXML": true,
+		"minifyWXSS": true
+	},
+	"simulatorPluginLibVersion": {},
+	"simulatorType": "wechat",
+	"srcMiniprogramRoot": "src/"
+}

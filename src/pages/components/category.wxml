@@ -1,0 +1,47 @@
+<scroll-view
+	scroll-x
+	enable-flex
+	class="nav"
+>
+	<view class="items">
+		<text
+			class="item {{ value === '最新公告' ? 'active' : '' }}"
+			bindtap="onClear"
+		>最新公告</text>
+		<text
+			data-index="{{ index }}"
+			class="item {{ item.value === value ? 'active' : '' }}"
+			wx:key="value"
+			wx:for="{{ selective }}"
+			wx:if="{{ item.active }}"
+			bindtap="onSelect"
+		>{{ item.value }}</text>
+	</view>
+</scroll-view>
+
+
+<view
+	class="more"
+	bindtap="onCloseSelective"
+	wx:if="{{ more }}"
+>
+	<view
+		class="selective"
+		catchtap="oncatchtapSelective"
+	>
+		<view
+			class="item"
+			data-index="{{ index }}"
+			wx:key="value"
+			wx:for="{{ selective }}"
+			bindtap="onToggleSelective"
+		>
+			<text class="label">{{ item.value  }}</text>
+			<switch
+				type="checkbox"
+				checked="{{  item.active  }}"
+			/>
+		</view>
+	</view>
+
+</view>
